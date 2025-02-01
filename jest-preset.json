@@ -1,0 +1,12 @@
+{
+  "preset": "@nestjs/testing",
+  "testEnvironment": "node",
+  "transform": {
+    "^.+\\.ts$": "ts-jest"
+  },
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "coverageDirectory": "coverage",
+  "collectCoverageFrom": [
+    "src/**/*.ts"
+  ]
+}
