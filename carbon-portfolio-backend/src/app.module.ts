@@ -1,9 +1,7 @@
-import {Module } from "@nestjs/common";
-import {TypeOrmModule} from "@nestjs/typeorm";
-import {Project} from "./portfolio/project.entity";
-import {PortfolioModule} from "./portfolio/portfolio.module";
-import { PortfolioService } from './portfolio/portfolio.service';
-import { PortfolioController } from './portfolio/portfolio.controller';
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { Project } from './portfolio/project.entity';
+import { PortfolioModule } from './portfolio/portfolio.module';
 
 @Module({
     imports: [
@@ -18,8 +16,6 @@ import { PortfolioController } from './portfolio/portfolio.controller';
             synchronize: false,
         }),
         PortfolioModule,
-    ],
-    controllers: [PortfolioController],
-    providers: [PortfolioService],
+    ]
 })
 export class AppModule {}
